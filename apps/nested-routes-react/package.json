@@ -1,0 +1,33 @@
+{
+  "name": "nested-routes-react",
+  "description": "Evaluation of nested routes",
+  "version": "0.1.0",
+  "author": "Naresh Bhatia",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview",
+    "format": "prettier --write README.md \"src/**/{*.md,*.json,*.css,*.ts*}\"",
+    "clean": "rimraf .turbo node_modules dist coverage test-output"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
+    "react-query": "^3.34.0",
+    "react-router-dom": "^6.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.37",
+    "@types/react-dom": "^17.0.11",
+    "@vitejs/plugin-react": "^1.1.0",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.4",
+    "prettier": "^2.5.1",
+    "tailwindcss": "^2.2.19",
+    "typescript": "^4.5.2",
+    "vite": "^2.6.14"
+  }
+}

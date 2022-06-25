@@ -1,0 +1,44 @@
+{
+  "name": "nested-routes-remix",
+  "description": "Evaluation of nested routes",
+  "version": "0.1.0",
+  "author": "Naresh Bhatia",
+  "license": "MIT",
+  "scripts": {
+    "build": "npm run build:css && remix build",
+    "build:css": "npm run postcss:run --env production",
+    "dev": "concurrently \"npm run postcss:run --watch\" \"remix dev\"",
+    "format": "prettier --write README.md 'app/**/{*.md,*.json,*.css,*.ts*}'",
+    "postcss:run": "postcss styles/**/*.css --base styles --dir src/styles",
+    "postinstall": "remix setup node",
+    "start": "remix-serve build",
+    "clean": "rimraf .turbo .cache node_modules build public/build coverage test-output"
+  },
+  "dependencies": {
+    "@remix-run/node": "^1.6.0",
+    "@remix-run/react": "^1.6.0",
+    "@remix-run/serve": "^1.6.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^1.6.0",
+    "@remix-run/eslint-config": "^1.6.0",
+    "@types/react": "^17.0.37",
+    "@types/react-dom": "^17.0.11",
+    "autoprefixer": "^10.4.0",
+    "concurrently": "^6.4.0",
+    "cssnano": "^5.0.12",
+    "eslint": "^8.17.0",
+    "postcss": "^8.4.4",
+    "postcss-cli": "^9.0.2",
+    "prettier": "^2.5.1",
+    "tailwindcss": "^2.2.19",
+    "typescript": "^4.5.2"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "sideEffects": false
+}
