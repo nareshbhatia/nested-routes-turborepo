@@ -7,7 +7,7 @@ Evaluation of nested routes using the following frameworks.
 3. [Remix](https://remix.run/)
 
 This version uses Turborepo. Previous version is
-[here](https://github.com/nareshbhatia/nested-routes)
+[here](https://github.com/nareshbhatia/nested-routes).
 
 ## Building Nested Routes
 
